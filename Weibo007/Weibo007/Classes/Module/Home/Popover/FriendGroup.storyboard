@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.17" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="dXz-kW-pMS">
+            <objects>
+                <viewController storyboardIdentifier="FriendGroupSB" id="2o8-kW-KtG" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="izA-rs-e6P"/>
+                        <viewControllerLayoutGuide type="bottom" id="3bs-La-0Bj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2e5-Li-IhP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popover_background" translatesAutoresizingMaskIntoConstraints="NO" id="jq9-i1-Jej">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="d6u-sm-tl2">
+                                <rect key="frame" x="20" y="20" width="560" height="564"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="jq9-i1-Jej" secondAttribute="trailing" id="3eS-WL-bBY"/>
+                            <constraint firstItem="3bs-La-0Bj" firstAttribute="top" secondItem="d6u-sm-tl2" secondAttribute="bottom" constant="16" id="O8C-qr-bRb"/>
+                            <constraint firstItem="jq9-i1-Jej" firstAttribute="top" secondItem="izA-rs-e6P" secondAttribute="bottom" id="SSG-dw-OvO"/>
+                            <constraint firstItem="d6u-sm-tl2" firstAttribute="top" secondItem="izA-rs-e6P" secondAttribute="bottom" constant="20" id="ZWg-C6-gdc"/>
+                            <constraint firstItem="d6u-sm-tl2" firstAttribute="trailing" secondItem="2e5-Li-IhP" secondAttribute="trailingMargin" id="eMS-6J-wN8"/>
+                            <constraint firstItem="3bs-La-0Bj" firstAttribute="top" secondItem="jq9-i1-Jej" secondAttribute="bottom" id="lCH-In-k3I"/>
+                            <constraint firstItem="d6u-sm-tl2" firstAttribute="leading" secondItem="2e5-Li-IhP" secondAttribute="leadingMargin" id="trb-Hj-QOM"/>
+                            <constraint firstItem="jq9-i1-Jej" firstAttribute="leading" secondItem="2e5-Li-IhP" secondAttribute="leading" id="z38-fH-xz0"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XeL-RW-8CT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="565" y="228"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="popover_background" width="217" height="48"/>
+    </resources>
+</document>
